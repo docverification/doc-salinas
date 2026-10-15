@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Académica</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            Consulta Académica
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#consulta">Consulta</a>
+            <a href="#institucion">Institución</a>
+        </nav>
+    </div>
+</header>
+
+
+<section class="hero" id="inicio">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                CONSULTA ACADÉMICA
+            </span>
+
+            <h1>
+                Consulta de
+                <strong>documentos académicos</strong>
+            </h1>
+
+            <p>
+                Ingrese el código de consulta para acceder
+                a la información y documentación asociada.
+            </p>
+
+            <div class="verification-box" id="consulta">
+
+                <label for="codigo">
+                    Código de consulta
+                </label>
+
+                <div class="verification-form">
+
+                    <input
+                        type="text"
+                        id="codigo"
+                        placeholder="Ejemplo: documento-año"
+                        autocomplete="off"
+                    >
+
+                    <button id="btnConsultar">
+                        Consultar
+                    </button>
+
+                </div>
+
+                <div id="mensaje" class="mensaje"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="decor-circle circle-1"></div>
+            <div class="decor-circle circle-2"></div>
+
+            <div class="institution-card">
+
+                <img
+                    src="logo.png"
+                    alt="Logo institucional"
+                >
+
+                <span>
+                    COLEGIO ALMIRANTE PADILLA I.E.D.
+                </span>
+
+                <strong>
+                    Consulta Académica
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="features-container">
+
+        <article class="feature dark">
+
+            <div class="feature-icon">
+                ✓
+            </div>
+
+            <h2>
+                Consulta académica
+            </h2>
+
+            <p>
+                Acceso organizado a la información
+                asociada al registro consultado.
+            </p>
+
+        </article>
+
+
+        <article class="feature">
+
+            <div class="feature-icon blue">
+                📄
+            </div>
+
+            <h3>
+                Acta de grado
+            </h3>
+
+            <p>
+                Consulta del documento académico
+                asociado al registro.
+            </p>
+
+        </article>
+
+
+        <article class="feature">
+
+            <div class="feature-icon gold">
+                🎓
+            </div>
+
+            <h3>
+                Diploma
+            </h3>
+
+            <p>
+                Acceso al documento correspondiente
+                al título académico.
+            </p>
+
+        </article>
+
+
+        <article class="feature">
+
+            <div class="feature-icon green">
+                ✓
+            </div>
+
+            <h3>
+                Acceso controlado
+            </h3>
+
+            <p>
+                La documentación permanece oculta
+                hasta realizar la consulta.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<main class="results">
+
+    <div id="resultado" class="resultado">
+
+
+        <div class="status">
+
+            <div class="status-icon">
+                ✓
+            </div>
+
+            <div>
+                <strong>
+                    Consulta realizada
+                </strong>
+
+                <span>
+                    Información asociada al registro
+                </span>
+            </div>
+
+        </div>
+
+
+        <section class="information-card">
+
+            <div class="heading">
+
+                <span>
+                    INFORMACIÓN DEL GRADUADO
+                </span>
+
+                <h2>
+                    Datos académicos
+                </h2>
+
+            </div>
+
+
+            <div class="data-grid">
+
+                <div class="data-item">
+
+                    <small>
+                        Nombre completo
+                    </small>
+
+                    <strong id="nombre">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <small>
+                        Documento
+                    </small>
+
+                    <strong id="documento">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <small>
+                        Programa
+                    </small>
+
+                    <strong id="programa">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <small>
+                        Título obtenido
+                    </small>
+
+                    <strong id="titulo">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <small>
+                        Fecha de grado
+                    </small>
+
+                    <strong id="fecha">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="data-item">
+
+                    <small>
+                        Número de acta
+                    </small>
+
+                    <strong id="acta">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="documents">
+
+            <div class="heading">
+
+                <span>
+                    DOCUMENTACIÓN
+                </span>
+
+                <h2>
+                    Documentos asociados
+                </h2>
+
+            </div>
+
+
+            <div class="documents-grid">
+
+
+                <article class="document-card">
+
+                    <div class="document-top">
+
+                        <div class="document-icon blue">
+                            📄
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Acta individual de grado
+                            </h3>
+
+                            <p>
+                                Acta No. 024
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <button
+                            class="btn blue-btn"
+                            id="verActa"
+                        >
+                            Ver documento
+                        </button>
+
+                        <button
+                            class="btn dark-btn"
+                            id="descargarActa"
+                        >
+                            Descargar
+                        </button>
+
+                        <button
+                            class="btn gray-btn"
+                            id="imprimirActa"
+                        >
+                            Imprimir
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="document-card">
+
+                    <div class="document-top">
+
+                        <div class="document-icon gold">
+                            🎓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Diploma de grado
+                            </h3>
+
+                            <p>
+                                Bachiller Académico
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="buttons">
+
+                        <button
+                            class="btn gold-btn"
+                            id="verDiploma"
+                        >
+                            Ver documento
+                        </button>
+
+                        <button
+                            class="btn dark-btn"
+                            id="descargarDiploma"
+                        >
+                            Descargar
+                        </button>
+
+                        <button
+                            class="btn gray-btn"
+                            id="imprimirDiploma"
+                        >
+                            Imprimir
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="institution" id="institucion">
+
+            <img
+                src="logo.png"
+                alt="Logo"
+            >
+
+            <div>
+
+                <span>
+                    INSTITUCIÓN EDUCATIVA
+                </span>
+
+                <h2>
+                    Colegio Almirante Padilla I.E.D.
+                </h2>
+
+                <p>
+                    Información académica y documental
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<div id="visor" class="visor">
+
+    <div class="visor-content">
+
+        <div class="visor-header">
+
+            <div>
+
+                <small>
+                    DOCUMENTO
+                </small>
+
+                <h2 id="visorTitulo">
+                    Documento
+                </h2>
+
+            </div>
+
+            <button id="cerrar">
+                ×
+            </button>
+
+        </div>
+
+        <div class="imagen-container">
+
+            <img
+                id="imagenDocumento"
+                src=""
+                alt="Documento académico"
+            >
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <strong>
+            Consulta Académica
+        </strong>
+
+        <span>
+            Sistema de consulta documental
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
